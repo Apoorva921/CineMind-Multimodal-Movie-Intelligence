@@ -82,6 +82,7 @@ Each scene is converted into a **structured data record** that can be queried, a
   "dialogue_count": 4
 }
 
+---
 
 ## ⚙️ Tech Stack
 
@@ -100,6 +101,7 @@ NLTK
 Rule-based sentiment analysis
 Keyword extraction
 
+---
 
 ## 🗂️ Project Structure
 
@@ -114,6 +116,7 @@ data/
 ├── raw_movies/
 ├── subtitles/
 
+---
 
 ## 📊 Project Status
 
@@ -128,6 +131,7 @@ Database Integration	✅ Complete
 Machine Learning Training	⏳ Planned
 Frontend Dashboard	⏳ Planned
 
+---
 
 <div align="center">
 
@@ -136,4 +140,5 @@ Built to demonstrate real-world AI system design, not just model training
 **⭐ Star this repository if you find it useful! **
 
 </div> ```
+---
 
