@@ -1,20 +1,40 @@
-CineMind — Multimodal Movie Intelligence System
+🎬 CineMind — Multimodal AI System for Movie Intelligence
 
-CineMind is a backend-centric multimodal AI system that analyzes movies at the scene level by combining video structure, audio emotion, and textual dialogue to generate engagement signals and structured insights.
+CineMind is an end-to-end multimodal AI backend system that analyzes movies at the scene level by fusing video structure, audio emotion, and textual dialogue to compute engagement signals and identify impactful moments.
 
-The project focuses on real-world AI system design, emphasizing data pipelines, feature engineering, and ML readiness rather than isolated model training or demos.
+The project demonstrates real-world AI system design, focusing on data pipelines, feature engineering, and ML-ready architectures rather than isolated model training.
 
-Overview
+🚀 Why This Project Matters
 
-Movies are long, unstructured data.
-CineMind transforms raw movie files into structured, scene-level intelligence that can be used for analytics, editorial decision support, and downstream machine learning.
+Most student ML projects start with a dataset.
+Real industry AI systems start by creating one.
 
-The system processes a movie end-to-end and produces numerical features describing how emotionally engaging each scene is and why.
+CineMind solves this by converting raw, unstructured movie data into structured, scene-level intelligence suitable for analytics, ML training, and editorial workflows.
 
-System Pipeline
+This mirrors how large companies (Netflix, YouTube, Amazon Prime) build internal AI services.
+
+🧠 What CineMind Does
+
+For an uploaded movie, CineMind:
+
+Segments the movie into scenes
+
+Extracts audio emotion signals
+
+Extracts and parses subtitles
+
+Performs NLP on dialogue (sentiment, intensity, keywords)
+
+Fuses all modalities into numerical features
+
+Computes an engagement score per scene
+
+Each scene becomes a machine-readable data record.
+
+🔄 Processing Pipeline
 Movie Upload
    ↓
-Scene Detection
+Scene Detection (Video)
    ↓
 Audio Emotion Analysis
    ↓
@@ -24,41 +44,32 @@ Multimodal Feature Fusion
    ↓
 Scene-level Engagement Scoring
 
+🧠 Core Engineering Highlights
+Multimodal Feature Engineering
 
-Each scene becomes a machine-readable data record.
+Scene-level temporal alignment across video, audio, and text
 
-Key Capabilities
-Video Intelligence
+Emotion confidence aggregation
 
-Automatic scene segmentation
+Dialogue density and sentiment intensity modeling
 
-Precise scene timestamps
+AI System Design
 
-Audio Intelligence
+Weakly supervised engagement labeling (rule-based baseline)
 
-Audio extraction via FFmpeg
+ML-ready feature generation pipeline
 
-Emotion confidence and intensity analysis over time windows
+Clear separation of ingestion, processing, fusion, and serving layers
 
-Text Intelligence
+Backend Architecture
 
-Embedded subtitle extraction
+Modular FastAPI service design
 
-Time-aligned dialogue parsing
+Clean API contracts and schemas
 
-Sentiment and emotional intensity analysis
+Database persistence using SQLAlchemy + PostgreSQL
 
-Keyword extraction
-
-Multimodal Fusion
-
-Temporal alignment of video, audio, and text
-
-Scene-level feature aggregation
-
-Rule-based engagement scoring (baseline)
-
-Example Output
+📊 Example Output
 {
   "scene_id": 2,
   "start_time": 18.5,
@@ -71,24 +82,12 @@ Example Output
   "dialogue_count": 3
 }
 
-Architecture & Design Principles
-
-Modular service-based backend
-
-Clear separation of ingestion, processing, fusion, and serving layers
-
-ML-ready feature generation
-
-Weakly supervised labeling using rule-based heuristics
-
-Extensible design for future model training and scaling
-
-Tech Stack
+🏗️ Tech Stack
 Backend & Data
 
-Python 3.12
-
 FastAPI
+
+Python 3.12
 
 SQLAlchemy
 
@@ -104,17 +103,17 @@ MoviePy
 
 OpenCV
 
-Natural Language Processing
+NLP
 
 NLTK
 
-Rule-based sentiment and keyword extraction
+Rule-based sentiment & keyword extraction
 
-Project Structure
+📁 Project Structure
 backend/
  └── app/
      ├── api/          # FastAPI endpoints
-     ├── services/     # Core processing logic
+     ├── services/     # Scene, audio, text, fusion logic
      ├── db/           # Database models & engine
      ├── schemas/      # API schemas
      └── main.py
@@ -122,14 +121,14 @@ data/
  ├── raw_movies/
  └── subtitles/
 
-Current Status
+📌 Current Status
 Component	Status
-Backend architecture	Complete
-Scene detection	Complete
-Audio emotion analysis	Complete (baseline)
-Text extraction & NLP	Complete
-Multimodal fusion	Complete
-Engagement scoring	Complete (rule-based)
-Database persistence	Implemented
-ML model training	Planned
-Frontend dashboard	Planned
+Backend architecture	✅ Complete
+Scene detection	✅ Complete
+Audio emotion analysis	✅ Complete
+Text extraction & NLP	✅ Complete
+Multimodal fusion	✅ Complete
+Engagement scoring	✅ Complete (baseline)
+Database persistence	✅ Implemented
+ML model training	⏳ Planned
+Frontend dashboard	⏳ Planned
