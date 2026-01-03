@@ -10,6 +10,8 @@ It analyzes visual structure, audio emotion, and dialogue sentiment to estimate 
 
 The project focuses on real-world AI system design — feature pipelines, multimodal fusion, and ML readiness — rather than toy model demos.
 
+
+
 ✨ Key Features
 
 🎞 Scene Detection — Automatic segmentation of movies into timestamped scenes
@@ -25,6 +27,8 @@ The project focuses on real-world AI system design — feature pipelines, multim
 🗄 Database Persistence — Scene intelligence stored in PostgreSQL
 
 ⚙️ Production-Ready Backend — Modular FastAPI architecture
+
+
 
 🧠 How CineMind Works
 Movie Upload
@@ -42,6 +46,8 @@ Scene-Level Engagement Scores
 
 Each scene becomes a structured data record suitable for analytics or ML training.
 
+
+
 📦 Example Output
 {
   "scene_id": 3,
@@ -55,32 +61,26 @@ Each scene becomes a structured data record suitable for analytics or ML trainin
   "dialogue_count": 4
 }
 
+
+
+
 🛠 Tech Stack
+
 Backend & Data
-
 Python
-
 FastAPI
-
 SQLAlchemy
-
 PostgreSQL
-
 Media Processing
-
 FFmpeg
-
 PySceneDetect
-
 MoviePy
-
 OpenCV
-
 NLP
-
 NLTK
-
 Rule-based sentiment & keyword extraction
+
+
 
 🗂 Project Structure
 backend/
@@ -94,6 +94,8 @@ data/
  ├── raw_movies/
  └── subtitles/
 
+ 
+
 📈 Project Status
 Component	Status
 Backend architecture	✅ Complete
@@ -105,41 +107,18 @@ Engagement scoring	✅ Complete (rule-based)
 Database integration	✅ Complete
 ML model training	⏳ Planned
 Frontend dashboard	⏳ Planned
+
+
 🤖 Machine Learning Note
 
 CineMind currently uses rule-based heuristics to generate engagement scores.
-
 This is intentional:
 
 Enables weakly supervised learning
-
 Produces labeled data for future ML models
-
 Mirrors how real-world ML pipelines are bootstrapped
-
 No pretrained ML model is used yet.
 
-🚧 Limitations
-
-Engagement scoring is heuristic (not learned)
-
-Subtitle extraction depends on embedded subtitles
-
-No frontend UI yet
-
-Not optimized for large-scale production traffic
-
-🔮 Future Improvements
-
-ML-based engagement prediction models
-
-Shot-level and pacing analysis
-
-Speech-to-text (Whisper) integration
-
-React-based analytics dashboard
-
-Distributed processing & scaling
 
 👤 Author
 
@@ -147,10 +126,10 @@ Apoorva Srivastava
 B.Tech Computer Science
 Focus: Backend Engineering, Multimodal AI Systems, ML Pipelines
 
-📄 License
 
+📄 License
 MIT License — for educational and research use.
 
-🎯 Why This Project Matters
 
+🎯 Why This Project Matters
 CineMind demonstrates how real AI systems are engineered — from raw data ingestion to structured intelligence — the same way teams at Netflix, Meta, or Google approach multimodal problems.
