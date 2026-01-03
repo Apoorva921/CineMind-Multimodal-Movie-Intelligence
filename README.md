@@ -80,26 +80,29 @@ Each scene is converted into a **structured data record** that can be queried, a
   "text_intensity": 0.85,
   "keywords": ["revenge", "threat"],
   "dialogue_count": 4
+ ```
 }
 
 ---
 
+
+
 ## ⚙️ Tech Stack
 
-Backend & Data
-Python
-FastAPI
-SQLAlchemy
-PostgreSQL
-Video & Audio Processing
-FFmpeg
-PySceneDetect
-MoviePy
-OpenCV
-NLP
-NLTK
-Rule-based sentiment analysis
-Keyword extraction
+- Backend & Data
+- Python
+- FastAPI
+- SQLAlchemy
+- PostgreSQL
+- Video & Audio Processing
+- FFmpeg
+- PySceneDetect
+- MoviePy
+- OpenCV
+- NLP
+- NLTK
+- Rule-based sentiment analysis
+- Keyword extraction
 
 ---
 
@@ -137,7 +140,7 @@ Frontend Dashboard	⏳ Planned
 
 Built to demonstrate real-world AI system design, not just model training
 
-**⭐ Star this repository if you find it useful! **
+## ⭐ Star this repository if you find it useful! 
 
 </div> ```
 ---
